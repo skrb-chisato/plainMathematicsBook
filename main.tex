@@ -1,0 +1,52 @@
+% Template name: Plain mathematics book
+% Version: 0.0.1
+% Author: Chisato 千恵
+
+% Do not change the command order or remove spaces to avoid errors.
+
+% Environments
+
+\documentclass[oneside]{book} % Specifies the document class as "book" with a "oneside" option for a single-sided layout.
+
+\usepackage{plainBook} % Imports the "plainBook" template style package.
+
+% Metadata
+
+\newcommand{\bookTitle}{Book title} % Sets the title of book.
+\newcommand{\bookSubtitle}{Book subtitle} % Sets the subtitle of book.
+\newcommand{\bookAuthor}{Book author} % Sets the authors of book.
+
+% Document body
+
+\begin{document}
+    \begin{spacing}{1.5} % Sets line spacing to 1.5 for the entire document.
+        
+        % Front matter
+        
+        \frontmatter
+        
+        \title{\Huge{\textbf{\bookTitle}} \\ \LARGE{\bookSubtitle}} % Defines the title with specified formatting.
+        \author{\bookAuthor} % Defines the authors with specified formatting.
+        \date{} % Date is left empty.
+
+        \maketitle % Generates and displays the title, author, and date.
+
+        \include{content/frontmatter/preface.tex} % Includes the preface.
+        
+        \setcounter{tocdepth}{1} % Sets the depth level for the table of contents (1 includes sections only).
+        \tableofcontents % Generates and displays the table of contents.
+
+        % Main matter
+
+        \mainmatter
+        
+        \part{Part title}
+            \include{content/mainmatter/1Part/1Chapter.tex}
+        % Back matter
+        
+        \backmatter
+        
+        \include{content/backmatter/index.tex} % Includes the index.
+        \include{content/backmatter/bibliography.tex} % Includes the bibliography.
+    \end{spacing}
+\end{document}

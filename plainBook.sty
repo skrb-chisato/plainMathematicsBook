@@ -1,0 +1,47 @@
+% Template name: Plain mathematics book
+% Version: 0.0.1
+% Author: Chisato 千恵
+
+% Do not change the command order or remove spaces to avoid errors.
+
+% Environments
+
+\NeedsTeXFormat{LaTeX2e} % Specifies the required LaTeX format.
+
+% Metadata
+
+\ProvidesPackage{plainBook} % Provides the template name.
+
+% Packages
+
+\RequirePackage[a4paper, includeheadfoot, top=20mm, bottom=20mm, left=24mm, right=24mm]{geometry} % Customizes page layout, including paper size and margins.
+\RequirePackage{setspace} % Allows adjustment of line spacing.
+\RequirePackage{mathpazo} % Sets the font to Palatino.
+\RequirePackage{amsmath} % Enhances math typesetting with additional environments.
+\RequirePackage{amssymb} % Provides extra mathematical symbols.
+\RequirePackage{amsthm} % Introduces theorem-like environments (theorems, proofs, etc.).
+\RequirePackage{graphicx} % Enables inclusion of external images.
+\RequirePackage{makeidx} % Facilitates the creation of an index.
+\RequirePackage{hyperref} % Enables hyperlinks within the document.
+\RequirePackage{tikz} % Enables creating graphics, diagrams, and illustrations.
+
+% Theorem styles
+
+\theoremstyle{definition}
+    \newtheorem{definition}{Definition}[section] % Defines a "definition" theorem style for definitions.
+
+\theoremstyle{plain}
+    \newtheorem{axiom}{Axiom}[section] % Defines a "plain" theorem style for axioms.
+    \newtheorem{theorem}{Theorem}[section] % Defines a "plain" theorem style for theorems.
+    \newtheorem{corollary}[theorem]{Corollary} % Defines a corollary style linked to theorems.
+    \newtheorem{lemma}[theorem]{Lemma} % Defines a lemma style linked to theorems.
+    \newtheorem{proposition}[theorem]{Proposition} % Defines a proposition style linked to theorems.
+
+\theoremstyle{remark}
+    \newtheorem{example}{Example}[section] % Defines a "remark" theorem style for examples.
+    \newtheorem{exercise}{Exercise}[section] % Defines a "remark" theorem style for exercises.
+    \newtheorem{remark}{Remark}[section] % Defines a "remark" theorem style for remarks.
+
+% Indexes
+
+\makeindex % Enables index creation.

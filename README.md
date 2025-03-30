@@ -2,6 +2,8 @@
 
 A clean, simple, and ready-to-use LaTeX template for quickly starting your mathematics book.
 
+View the PDF output in [main.pdf](https://github.com/skrb-chisato/plain_mathematics_book/blob/main/main.pdf).
+
 ## Table of Contents
 
 - [Structure](#structure)

@@ -1,8 +1,8 @@
-# Plain mathematics book
+# Plain mathematics book (LaTeX template)
 
 A clean, simple, and ready-to-use LaTeX template for quickly starting your mathematics book.
 
-View the PDF output in [main.pdf](https://github.com/skrb-chisato/plain_mathematics_book/blob/main/main.pdf).
+![PDF preview!](https://raw.githubusercontent.com/skrb-chisato/plainMathematicsBook/refs/heads/main/PDFPreview.png)
 
 ## Table of Contents
 
@@ -30,6 +30,7 @@ The repository is structured as follows:
         - bibliography.tex: The file containing the LaTeX command that instructs LaTeX to insert the generated bibliography into the document.
         - bibliography.bib: The bibliography database file.
 - main.pdf: The compiled PDF output of the book.
+- PDFPreview.png: The preview of the compiled PDF output of the book.
 - README.md: The file providing information about the structure, features, prerequisites, compilation, maintainers, and license of this repository.
 - LICENSE: The file containing the license terms defining how the repository can be used, shared, and modified.
 
@@ -93,4 +94,4 @@ If you prefer to compile using the terminal or command prompt:
 
 ## License
 
-This repository is using [The Unlicense](https://github.com/skrb-chisato/plain_mathematics_book/blob/main/LICENSE).
+This repository is using [The Unlicense](https://github.com/skrb-chisato/plainMathematicsBook/blob/main/LICENSE).

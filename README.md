@@ -4,11 +4,32 @@ A clean, simple, and ready-to-use LaTeX template for quickly starting your mathe
 
 ## Table of Contents
 
+- [Structure](#structure)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Compilation](#compilation)
 - [Maintainers](#maintainers)
 - [License](#license)
+
+## Structure
+
+The repository is structured as follows:
+
+- main.tex: The root LaTeX file of the book.
+- plainBook.sty: The LaTeX style file of the book.
+- content: The directory of all the content of the book.
+    - frontmatter: The directory of front matter of the book.
+        - perface.tex: The perface of the book.
+    - mainmatter: The directory of main matter of the book.
+        - 1Part: A part of the book. You can rename this directory or create additional directories for other parts.
+            - 1Chapter.tex: A chapter of the book. You can rename this file or create additional files for other chapters.
+    - backmatter: The directory of back matter of the book.
+        - index.tex: The file containing the LaTeX command that instructs LaTeX to insert the generated index into the document.
+        - bibliography.tex: The file containing the LaTeX command that instructs LaTeX to insert the generated bibliography into the document.
+        - bibliography.bib: The bibliography database file.
+- main.pdf: The compiled PDF output of the book.
+- README.md: The file providing information about the structure, features, prerequisites, compilation, maintainers, and license of this repository.
+- LICENSE: The file containing the license terms defining how the repository can be used, shared, and modified.
 
 ## Features
 

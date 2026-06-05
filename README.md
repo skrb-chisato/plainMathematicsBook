@@ -25,6 +25,8 @@ The repository is structured as follows:
     - mainmatter: The directory of main matter of the book.
         - 1Part: A part of the book. You can rename this directory or create additional directories for other parts.
             - 1Chapter.tex: A chapter of the book. You can rename this file or create additional files for other chapters.
+        - appendix: The directory of appendices of the book.
+            - 1appendix: An appendix of the book. You can rename this file or create additional files for other appendices.
     - backmatter: The directory of back matter of the book.
         - index.tex: The file containing the LaTeX command that instructs LaTeX to insert the generated index into the document.
         - bibliography.tex: The file containing the LaTeX command that instructs LaTeX to insert the generated bibliography into the document.
@@ -46,11 +48,13 @@ The repository is structured as follows:
 
 - **Indexing support:** Generates index entries using the `makeidx` package.
 
+- **Appendices support:** Includes the appendix template for further editing.
+
 - **Clickable hyperlinks:** Creates clickable table of contents, references, index entries, URLs and more via the `hyperref` package.
 
 - **High compatibility:** Works with standard LaTeX distributions like TeX Live across different operating systems and editors[^highCompatibility].
 
-[^highCompatibility]: Tested with TeX Live + VS Code + LaTeX Workshop on Windows, and VerbTeX on Android.
+[^highCompatibility]: Tested with TeX Live + VS Code + LaTeX Workshop on Windows, VerbTeX on Android, and Overleaf.
 
 ## Prerequisites
 

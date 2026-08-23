@@ -1,17 +1,72 @@
 % Template name: Plain mathematics book
-% Version: 0.1.0
+% Version: 0.1.1
 % Author: Chisato
 
 % Do not change the command order or remove spaces to avoid errors.
 
-\chapter{Chapter title}
+\chapter{Etiam ut ipsum}
 
-Chapter text.
+Duis sed urna felis. Pellentesque ut nisi eget nibh dapibus lacinia. Quisque eget arcu sit amet odio imperdiet efficitur a eu ipsum.
 
-\section{Section title}
+\section{Mollis convallis}
 
-Section \emph{text}\index{text}. \cite{bibliographyBook}
+Maecenas velit est, finibus at vulputate eu, blandit et purus. Quisque ac dolor elit. Nam a dictum leo. Nullam cursus euismod fringilla. Cras efficitur quam sit amet turpis efficitur, at mollis massa eleifend.
 
-\subsection{Subsection title}
+\begin{definition}[Quisque pretium]\index{quisque pretium}
+    \emph{Quisque pretium} mattis nisi. Nullam bibendum vel enim non congue. Praesent eu lorem et eros molestie imperdiet. In aliquam nec est non cursus. \cite[p.~72]{doloremIpsumQuia}
+\end{definition}
 
-Subsection text. \cite{bibliographyMisc}
+Proin pulvinar consectetur ligula et sollicitudin. Proin ultrices iaculis nunc. Nullam sit amet dolor tincidunt, volutpat felis eu, aliquam ipsum: \[f(x; \mu, \sigma^2) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{(x - \mu)^2}{2\sigma^2} \right)\text{.}\]
+
+Nullam finibus, quam ac lacinia volutpat, nibh purus placerat dolor, ut aliquet lectus mi ut nunc. Fusce enim nulla, commodo vitae quam et, ultrices scelerisque magna.
+
+\begin{proposition}
+    Praesent maximus sed libero ac sagittis. Proin aliquet nunc vitae dapibus lobortis.
+\end{proposition}
+
+\emph{Lorem ipsum}\index{lorem ipsum} dolor sit amet, consectetur adipiscing elit. Sed facilisis pulvinar turpis, in elementum nunc sodales et. Proin semper vestibulum nisl. In elementum velit ut feugiat vulputate. \cite{consecteturDdipiscing}
+
+\subsection{Cras tincidunt}
+
+Maecenas molestie non leo iaculis sodales. \emph{Maecenas}\index{maecenas} non commodo nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla malesuada et quam nec volutpat. Duis aliquam risus quis vehicula finibus. Integer neque velit, rhoncus non orci vel, aliquet pharetra quam. Duis consectetur felis et sapien efficitur, ut pellentesque augue semper. Donec tempus interdum quam, nec lacinia metus porta vel. Ut ipsum arcu, faucibus id molestie pellentesque, eleifend et odio. \cite[p.~86]{doloremIpsumQuia}
+
+\begin{longtable}{l l c}
+    \textbf{Ante} & \textbf{Sollicitudin} & \textbf{Vestibulum} \\
+    \midrule
+    Sed & quam & a \\
+    Aenean & fringilla & ky \\
+    Nullam & bibendum & s \\
+    Pellentesque & dolor & R \\
+    \caption{Aenean posuere id. } \\
+\end{longtable}
+
+Praesent leo lectus, pharetra at fermentum eu, iaculis ac quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras rhoncus a nulla rutrum luctus.
+
+\section{Integer elementum}
+
+Purus interdum hendrerit euismod, justo elit eleifend augue, sed mattis eros est et urna. Proin porta libero quis lobortis scelerisque. Nam sed odio sollicitudin ante ornare rhoncus sed ut risus. Mauris eu erat purus. Donec aliquet turpis nec ultrices blandit. Vivamus elementum ac dui vel laoreet. Donec suscipit sollicitudin arcu, vel pellentesque nibh lacinia ut.
+
+\begin{figure}[!h]
+    \centering
+    \begin{tikzpicture}[scale=1.5, >=stealth]
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (4,0);
+        \coordinate (C) at (4,3);
+
+        \draw[thick, fill=blue!5] (A) -- (B) -- (C) -- cycle;
+
+        \draw[thick] (3.6,0) -- (3.6,0.4) -- (4,0.4);
+
+        \node[below] at (2,0) {$a = 4$};
+        \node[right] at (4,1.5) {$b = 3$};
+        \node[above left] at (2,1.5) {$c = \sqrt{a^2 + b^2} = 5$};
+
+        \filldraw[black] (A) circle (1pt) node[below left] {$A$};
+        \filldraw[black] (B) circle (1pt) node[below right] {$B$};
+        \filldraw[black] (C) circle (1pt) node[above right] {$C$};
+    \end{tikzpicture}
+
+    \caption{Nunc malesuada pretium.}
+\end{figure}
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum felis nunc, congue a maximus nec, feugiat ac purus. Proin erat tellus, rutrum et pharetra ultrices, lobortis vitae mauris. Nulla hendrerit vitae justo non porta. Proin iaculis tristique vestibulum. Cras at tincidunt libero, vitae porta urna. 

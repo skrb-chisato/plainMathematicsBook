@@ -1,47 +1,55 @@
 % Template name: Plain mathematics book
-% Version: 0.1.0
+% Version: 0.1.1
 % Author: Chisato
 
 % Do not change the command order or remove spaces to avoid errors.
 
-% Environments
+% Environment
 
-\NeedsTeXFormat{LaTeX2e} % Specifies the required LaTeX format.
+\NeedsTeXFormat{LaTeX2e} % Specifie the required LaTeX format.
 
 % Metadata
 
-\ProvidesPackage{plainBook} % Provides the template name.
+\ProvidesPackage{plainBook} % Provide the template name.
 
-% Packages
+% Package
 
-\RequirePackage[a4paper, includeheadfoot, top=20mm, bottom=20mm, left=24mm, right=24mm]{geometry} % Customizes page layout, including paper size and margins.
-\RequirePackage{setspace} % Allows adjustment of line spacing.
-\RequirePackage{mathpazo} % Sets the font to Palatino.
-\RequirePackage{amsmath} % Enhances math typesetting with additional environments.
-\RequirePackage{amssymb} % Provides extra mathematical symbols.
-\RequirePackage{amsthm} % Introduces theorem-like environments (theorems, proofs, etc.).
-\RequirePackage{graphicx} % Enables inclusion of external images.
-\RequirePackage{makeidx} % Facilitates the creation of an index.
-\RequirePackage{hyperref} % Enables hyperlinks within the document.
-\RequirePackage{tikz} % Enables creating graphics, diagrams, and illustrations.
+\RequirePackage[a4paper, includeheadfoot, top=20mm, bottom=20mm, left=24mm, right=24mm]{geometry} % Customize page layout, including paper size and margins.
+\RequirePackage{setspace} % Allow adjustment of line spacing.
+% \RequirePackage{ctex} % Uncomment this line if Chinese typesetting is required.
+\RequirePackage{mathpazo} % Set the font to Palatino.
+\RequirePackage{amsmath} % Enhance math typesetting with additional environments.
+\RequirePackage{amssymb} % Provide extra mathematical symbols.
+\RequirePackage{amsthm} % Introduce theorem-like environments (theorems, proofs, etc.).
+\RequirePackage{mathtools} % Provide advanced tools and enhancements for mathematical typesetting.
+\RequirePackage{pifont} % Provide standard PostScript Zapf Dingbats.
+\RequirePackage{graphicx} % Enable inclusion of external images.
+\RequirePackage{makeidx} % Facilitate the creation of an index.
+\RequirePackage{hyperref} % Enable hyperlinks within the document.
+\RequirePackage{tikz} % Enable creating graphics, diagrams, and illustrations.
+\RequirePackage{tikz-cd} % Enable creating commutative diagrams.
+\RequirePackage{appendix} % Provide chapter-level appendices.
+\RequirePackage{enumitem} % Enable advanced customization of list environments.
+\RequirePackage{booktabs} % Enable advanced customization of table rules and spacing.
+\RequirePackage{longtable} % Allow tables to span across multiple pages.
 
-% Theorem styles
+% Theorem style
 
 \theoremstyle{definition}
-    \newtheorem{definition}{Definition}[section] % Defines a "definition" theorem style for definitions.
+    \newtheorem{definition}{Definition}[section] % Define a "definition" theorem style for definitions.
 
 \theoremstyle{plain}
-    \newtheorem{axiom}{Axiom}[section] % Defines a "plain" theorem style for axioms.
-    \newtheorem{theorem}{Theorem}[section] % Defines a "plain" theorem style for theorems.
-    \newtheorem{corollary}[theorem]{Corollary} % Defines a corollary style linked to theorems.
-    \newtheorem{lemma}[theorem]{Lemma} % Defines a lemma style linked to theorems.
-    \newtheorem{proposition}[theorem]{Proposition} % Defines a proposition style linked to theorems.
+    \newtheorem{axiom}{Axiom}[section] % Define a "plain" theorem style for axioms.
+    \newtheorem{theorem}{Theorem}[section] % Define a "plain" theorem style for theorems.
+    \newtheorem{corollary}[theorem]{Corollary} % Define a corollary style linked to theorems.
+    \newtheorem{lemma}[theorem]{Lemma} % Define a lemma style linked to theorems.
+    \newtheorem{proposition}[theorem]{Proposition} % Define a proposition style linked to theorems.
 
 \theoremstyle{remark}
-    \newtheorem{example}{Example}[section] % Defines a "remark" theorem style for examples.
-    \newtheorem{exercise}{Exercise}[section] % Defines a "remark" theorem style for exercises.
-    \newtheorem{remark}{Remark}[section] % Defines a "remark" theorem style for remarks.
+    \newtheorem{example}{Example}[section] % Define a "remark" theorem style for examples.
+    \newtheorem{exercise}{Exercise}[section] % Define a "remark" theorem style for exercises.
+    \newtheorem{remark}{Remark}[section] % Define a "remark" theorem style for remarks.
 
-% Indexes
+% Index
 
-\makeindex % Enables index creation.
+\makeindex % Enable index creation.
